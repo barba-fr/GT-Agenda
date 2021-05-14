@@ -1,0 +1,23 @@
+
+$bg: #1e1b24;
+$dark: #2c243b;
+$primary: #9ac919;
+$light: #fcf7f1;
+$line: lighten($dark, 7%);
+
+$sacha: #cc4141;
+$charly: #42e242;
+$matheo: #3b7de0;
+$julie: #ec49ec;
+$sylvain: #dabe45;
+
+$marge: 8px;
+$corner: 3px;
+
+@mixin dev($color: red, $width: 1px) {
+    border: $width solid $color;
+}
+
+@mixin trans($time: .15s, $easing: ease-out) {
+    transition: all $time $easing;
+}
